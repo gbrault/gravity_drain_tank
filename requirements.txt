@@ -1,5 +1,4 @@
 ipycanvas
 numpy
 ipywidgets
-branca
 scipy
