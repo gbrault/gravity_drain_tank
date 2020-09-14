@@ -3,6 +3,9 @@ from jupyter/scipy-notebook:latest
 USER root
 RUN apt update -yq
 RUN apt install -yq cm-super
+# make jovyan a sudoer
+RUN usermod -aG sudo $NB_USER
+RUN echo "jovyan ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER $NB_UID
 
