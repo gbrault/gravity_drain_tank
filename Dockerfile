@@ -1,1 +1,1 @@
-from scipy-notebook:latest
+from jupyter/scipy-notebook:latest
