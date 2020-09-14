@@ -1,7 +1,8 @@
 conda update -n base conda
 conda update -y notebook
 conda update -y jupyterlab
-pip install -y future ipycanvas numpy ipywidgets scipy
+pip install -y future ipycanvas numpy matplotlib ipympl ipywidgets scipy
 pip install git+https://github.com/gbrault/jupytersketcher
 jupyter labextension update --all
+jupyter labextension install --nobuild @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
 jupyter lab build
