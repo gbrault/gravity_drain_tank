@@ -2,3 +2,4 @@ ipycanvas
 numpy
 ipywidgets
 scipy
+git+https://github.com/gbrault/jupytersketcher
